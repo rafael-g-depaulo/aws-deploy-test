@@ -9,7 +9,7 @@ WORKDIR /home/node/app
 RUN chmod -R 777 /home/node/app
 
 # install deps
-COPY package.json yarn.lock .yarn/ ./
+COPY package.json yarn.lock ./
 RUN yarn
 
 # Give rights to the node user
