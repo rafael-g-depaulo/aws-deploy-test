@@ -11,8 +11,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - echo "$REPOSITORY_URI:$IMAGE_VERSION"
-      - docker build -t $IMAGE_URI -$f docker/node-app.prod.dockerfile .
+      - echo "Building image $IMAGE_URI"
+      - docker build -t $IMAGE_URI -f docker/node-app.prod.dockerfile .
       # - docker tag $IMAGE_URI $REPOSITORY_URI:latest
   post_build:
     commands:
