@@ -1,4 +1,4 @@
-FROM node:16
+FROM public.ecr.aws/docker/library/node:16.19.0-alpine
 
 # install yarn (currently optional, but if it becomes an issue this might fix it)
 # RUN ["corepack", "enable"]
