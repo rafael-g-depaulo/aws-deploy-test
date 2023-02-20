@@ -11,7 +11,7 @@ const app = express();
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to api!' });
+  res.send({ message: 'API changed. lets see if it reflects on AWS.' });
 });
 
 app.get('/', (req, res) => {
